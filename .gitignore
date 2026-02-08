@@ -1,0 +1,21 @@
+# ===== Angular =====
+node_modules/
+dist/
+.angular/
+.env
+
+# ===== Java / Spring Boot =====
+target/
+build/
+*.log
+*.class
+*.jar
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
