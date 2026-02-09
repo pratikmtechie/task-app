@@ -1,0 +1,16 @@
+<div class="task-form">
+  <h2>Create Task</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <label>Title</label>
+    <input formControlName="title" placeholder="Title" />
+
+    <label>Priority</label>
+    <select formControlName="priority">
+      <option *ngFor="let p of priorities" [value]="p">{{ p }}</option>
+    </select>
+
+    <button type="submit" [disabled]="loading">Create</button>
+  </form>
+
+  <div *ngIf="message" class="message">{{ message }}</div>
+</div>
